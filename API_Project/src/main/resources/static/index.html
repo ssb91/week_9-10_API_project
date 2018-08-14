@@ -1,0 +1,77 @@
+<html>
+
+   <head>
+      <title>Home</title>
+	  
+      <script type = "text/javascript" src = "js/vue.js"></script>	  
+	  
+	  </head>
+ 
+ <body>
+<link rel="stylesheet" href="css/style.css">
+
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="add_account.html">Add account</a> 
+  <a href="edit_account.html">Edit account</a> 
+  <a href="delete_account.html">Delete account</a> 
+</div>
+
+<div class="main">
+
+        <h1>Home</h1>
+		 
+        <h3>Account database</h3>
+
+		 <p>This site is for adding, editing, or removing accounts into a <a href="http://localhost:8080/h2">database</a>. The following were selected to make the project.</p>
+
+		 <ul>
+		 <li>Spring boot is used to build the API, using the Eclipse IDE.</li>
+		 <li>H2 SQL for the database.</li>	
+		 <li>HTML, js (including vue.js) and CSS is for the web pages, ideally with jQuery and/or php for reuse of code.</li>			 
+		 </ul>
+
+
+		 <script>
+		 
+		document.getElementById("LinkList").onchange = function() {
+			
+			if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+		};
+	
+	</script>
+	  
+<h3>Preview account Table</h3>
+
+      <script type = "text/javascript" src = "js/dynamictable.js""></script>	  
+	  
+	<INPUT type="button" value="Add Row" onclick="addRow('accountlist')" />
+	<INPUT type="button" value="Delete Row" onclick="deleteRow('accountlist')" /> 
+		
+	<br/>
+	<br/>
+	
+	
+	<TABLE id="accountlist" width="350px" border="1">
+		
+		<TR style="font-weight:bold">
+			<TD> Select </TD>
+			<TD> ID </TD>
+			<TD> First name </TD>
+			<TD> Last name </TD>
+		</TR>
+		<TR>
+			<TD><INPUT type="checkbox" name="chk"/></TD>
+			<TD> <INPUT type="text" value="1"/> </TD>
+			<TD> <INPUT type="text" value="A"/> </TD>
+			<TD> <INPUT type="text" value="B"/> </TD>
+		</TR>
+	</TABLE>	
+	
+</div>	  
+
+
+   </body>
+</html>

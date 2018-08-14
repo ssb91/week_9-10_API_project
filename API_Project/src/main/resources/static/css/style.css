@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: segoe ui;
+		}
+
+		
+text { 
+
+font-family: segoe ui;
+}
+
+textbox { 
+
+font-family: segoe ui;
+}
+
+textarea { 
+
+font-family: segoe ui;
+}
+	table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+	color: black;
+	
+	
+	}
+
+	
+.sidenav {
+    height: 100%; 
+    width: 15%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: grey;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.main {
+    margin-left: 15%; 
+    padding: 0px 10px;
+}
